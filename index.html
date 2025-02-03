@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Ecommerce</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Skinic</h1>
+            <label for="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Ícono de hamburguesa -->
+            </label>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Bienvenido a nuestra tienda</h2>
+            <p>Encuentra los mejores productos al mejor precio.</p>
+            <a href="productos.html" class="btn">Ver Productos</a>
+        </section>
+
+        <!-- Sección de Ofertas Especiales -->
+        <section class="ofertas">
+            <h2>Ofertas Especiales</h2>
+            <div class="productos">
+                <div class="card">
+                    <img src="./assets/img/productos11.png" alt="Oferta 1">
+                    <div class="card-content">
+                        <h3>Producto en Oferta 1</h3>
+                        <p class="price">$20.00 <span class="old-price">$30.00</span></p>
+                        <p class="description">Descripción breve del producto en oferta.</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/productos12.png" alt="Oferta 2">
+                    <div class="card-content">
+                        <h3>Producto en Oferta 2</h3>
+                        <p class="price">$25.00 <span class="old-price">$35.00</span></p>
+                        <p class="description">Descripción breve del producto en oferta.</p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Imágenes -->
+        <section class="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria-imagenes">
+                <img src="./assets/img/imagen1.avif" alt="Galería 1">
+                <img src="./assets/img/imagen2.jpg" alt="Galería 2">
+                <img src="./assets/img/imagen3.png" alt="Galería 3">
+            </div>
+        </section>
+
+        <!-- Testimonios de Clientes -->
+        <section class="testimonios">
+            <h2>Testimonios de Clientes</h2>
+            <div class="testimonio">
+                <p>"¡Excelente servicio y productos de alta calidad! Definitivamente volveré a comprar."</p>
+                <p class="autor">- Juan Pérez</p>
+            </div>
+            <div class="testimonio">
+                <p>"Muy contento con mi compra. Los productos llegaron en perfecto estado y a tiempo."</p>
+                <p class="autor">- María Gómez</p>
+            </div>
+        </section>
+
+        <!-- Llamado a la Acción -->
+        <section class="cta">
+            <h2>¡No te lo pierdas!</h2>
+            <p>Regístrate ahora y obtén un 10% de descuento en tu primera compra.</p>
+            <a href="#" class="btn">Regístrate</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mi Ecommerce. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
