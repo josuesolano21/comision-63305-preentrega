@@ -120,7 +120,7 @@ body {
 }
 @font-face {
   font-family: "Skinic";
-  src: url("/assets/fonts/Breathing.ttf") format("woff");
+  src: url("../assets/fonts/Breathing.ttf") format("woff");
 }
 h1 {
   font-family: "Skinic", sans-serif;
