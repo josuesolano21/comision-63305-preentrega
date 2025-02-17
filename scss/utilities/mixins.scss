@@ -1,0 +1,21 @@
+@mixin grid($columns: auto-fit, $minmax: 200px, $gap: 1rem, $marginTop: 1rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, minmax($minmax, 1fr));
+    gap: $gap;
+    margin-top: $marginTop;
+}
+
+@mixin grid-cards($columns: 3, $min-width: 250px, $gap: 1rem, $padding: 2rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, minmax($min-width, 1fr)); /* Número de columnas fijo */
+    gap: $gap;
+    padding: $padding;
+}
+
+@mixin flex-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    text-align: center;
+}

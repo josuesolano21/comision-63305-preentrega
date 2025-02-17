@@ -1,10 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columna */
+    min-height: 100vh; /* Hace que el contenido ocupe al menos el 100% de la altura de la ventana */
+}
+
+main {
+    flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+}
+
 footer {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
+    background: linear-gradient(135deg, map-get($colores, "color-primario"), map-get($colores, "color-secundario"));
+    color: map-get($map: $colores, $key: blanco);
     text-align: center;
     padding: 1rem;
-    position: relative;
+    position: relative; /* El pie de página se coloca en la parte inferior, sin ser fijo */
     width: 100%;
-    bottom: 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,27 @@
+/* Mixins */
+@mixin card-styles {
+    background: $card-bg;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: $card-shadow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+@mixin button-styles($bg-color) {
+    background-color: $bg-color;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}

@@ -1,5 +1,62 @@
-/* Estilos para la página Acerca de */
-.acerca {
-    text-align: center;
-    padding: 2rem;
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: map-get($map: $colores, $key: texto-principal);
+    margin: 0;
+    padding: 0;
+
+    .acerca {
+        padding: 4rem 2rem;
+        background-color: map-get($map: $colores, $key: blanco);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: map-get($map: $colores, $key: texto-principal);
+        line-height: 1.6;
+
+        h2 {
+            font-size: 2.5rem;
+            color: map-get($map: $colores, $key: texto-principal);
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: map-get($map: $colores, $key: texto-principal);
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+    }
+
+    .mapa-contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: map-get($map: $colores, $key: blanco);
+
+        iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            width: 80%; /* Ajusta el tamaño según el dispositivo */
+            height: 400px;
+        }
+    }
+
+    footer {
+        background-color: map-get($map: $colores, $key: gris-claro);
+        color: map-get($map: $colores, $key: blanco);
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+
+        p {
+            margin: 0;
+        }
+    }
 }

@@ -1,12 +1,14 @@
 header {
     background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
+    color: map-get($map: $colores, $key:blanco);
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .header-content {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
@@ -18,7 +20,7 @@ header {
     .menu-toggle {
         background: none;
         border: none;
-        color: #fff;
+        color: map-get($map: $colores, $key: blanco );
         font-size: 1.5rem;
         cursor: pointer;
         display: none; 

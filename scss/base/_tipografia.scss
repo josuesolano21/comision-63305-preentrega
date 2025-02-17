@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Skinic';  // Nombre con el que la referenciarás
+    src: url('/assets/fonts/Breathing.ttf') format('woff'),
+}
+
+    h1 {
+    font-family: $Skinic; // Usamos la variable de tipografía aquí
+    font-size: 1.5rem;
+    margin: 0;
+    }
+
