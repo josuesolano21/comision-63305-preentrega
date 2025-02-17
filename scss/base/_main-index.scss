@@ -1,9 +1,7 @@
-/* Placeholder para fondo con gradiente */
 %fondo-gradiente {
     background: linear-gradient(135deg, map-get($colores, "color-primario"), map-get($colores, "color-secundario"));
 }
 
-/* Placeholder para botones personalizados */
 %boton-primario {
     background-color: map-get($colores, "amarillo-btn");
     color: map-get($colores, "texto-principal");
@@ -18,13 +16,11 @@
     }
 }
 
-/* Placeholder para secciones con fondo común */
 %seccion-con-fondo {
     padding: 2rem;
     text-align: center;
 }
 
-/* Placeholder para los estilos de los testimonios */
 %estilo-testimonio {
     background-color: map-get($colores, "gris-testimonio");
     padding: 1rem;
@@ -33,7 +29,6 @@
     max-width: 600px;
 }
 
-/* Estilos para la página de Inicio */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -57,7 +52,6 @@
     }
 }
 
-/* Estilos para la sección de Ofertas Especiales */
 .ofertas {
     @extend %seccion-con-fondo;
     background-color: map-get($colores, "amarillo-btn");
@@ -72,13 +66,12 @@
     }
 }
 
-/* Estilos para la Galería de Imágenes */
 .galeria {
     @extend %seccion-con-fondo;
     background-color: map-get($colores, "color-fondo");
 
     .galeria-imagenes {
-        @include grid(auto-fit, 200px, 1rem, 1rem); /* Usamos el mixin de grid */
+        @include grid(auto-fit, 200px, 1rem, 1rem);
         
         img {
             width: 100%;
@@ -94,7 +87,6 @@
     }
 }
 
-/* Estilos para los Testimonios */
 .testimonios {
     @extend %seccion-con-fondo;
     background-color: map-get($colores, "blanco");
@@ -115,10 +107,9 @@
     }
 }
 
-/* Estilos para el Llamado a la Acción */
 .cta {
     padding: 4rem 2rem;
-    @extend %fondo-gradiente; /* Se extiende el fondo gradiente */
+    @extend %fondo-gradiente; 
     color: map-get($colores, "blanco");
     text-align: center;
     border-radius: 10px;

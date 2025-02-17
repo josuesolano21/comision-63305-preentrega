@@ -14,12 +14,10 @@ body {
   color: #333;
 }
 
-/* Placeholder para fondo con gradiente */
 .cta, .hero {
   background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
 
-/* Placeholder para botones personalizados */
 .cta .btn, .hero .btn {
   background-color: #ffdd57;
   color: #333;
@@ -33,13 +31,11 @@ body {
   background-color: #ffcc00;
 }
 
-/* Placeholder para secciones con fondo común */
 .testimonios, .galeria, .ofertas {
   padding: 2rem;
   text-align: center;
 }
 
-/* Placeholder para los estilos de los testimonios */
 .testimonios .testimonio {
   background-color: #f9f9f9;
   padding: 1rem;
@@ -48,7 +44,6 @@ body {
   max-width: 600px;
 }
 
-/* Estilos para la página de Inicio */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -65,7 +60,6 @@ body {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-/* Estilos para la sección de Ofertas Especiales */
 .ofertas {
   background-color: #ffdd57;
 }
@@ -76,7 +70,6 @@ body {
   margin-left: 0.5rem;
 }
 
-/* Estilos para la Galería de Imágenes */
 .galeria {
   background-color: #f4f4f4;
 }
@@ -85,7 +78,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
-  /* Usamos el mixin de grid */
 }
 .galeria .galeria-imagenes img {
   width: 100%;
@@ -98,7 +90,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Estilos para los Testimonios */
 .testimonios {
   background-color: #fff;
 }
@@ -112,10 +103,8 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Estilos para el Llamado a la Acción */
 .cta {
   padding: 4rem 2rem;
-  /* Se extiende el fondo gradiente */
   color: #fff;
   text-align: center;
   border-radius: 10px;
@@ -147,6 +136,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 header .header-content {
   display: flex;
@@ -163,11 +153,19 @@ header .menu-toggle {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+  position: absolute;
+  right: 1rem;
 }
 header .menu-toggle-checkbox {
   display: none;
 }
 
+@media (max-width: 963px) {
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+  }
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -192,7 +190,6 @@ main {
   padding: 2rem;
 }
 
-/* Estilos generales */
 body {
   font-family: "Roboto", sans-serif;
   color: #333;
@@ -232,7 +229,7 @@ body .mapa-contenedor {
 body .mapa-contenedor iframe {
   max-width: 100%;
   border-radius: 10px;
-  width: 80%; /* Ajusta el tamaño según el dispositivo */
+  width: 80%;
   height: 400px;
 }
 body footer {
@@ -278,12 +275,12 @@ body footer p {
 
 body {
   display: flex;
-  flex-direction: column; /* Organiza el contenido en columna */
-  min-height: 100vh; /* Hace que el contenido ocupe al menos el 100% de la altura de la ventana */
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-  flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+  flex: 1;
 }
 
 footer {
@@ -291,12 +288,11 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  position: relative; /* El pie de página se coloca en la parte inferior, sin ser fijo */
+  position: relative;
   width: 100%;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos base para las cards */
 .card {
   background-color: #fff;
   border: 1px solid #fff;
@@ -311,7 +307,6 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo base para los botones de las cards */
 .card .card-content button {
   background-color: #2575fc;
   color: #fff;
@@ -325,18 +320,13 @@ footer {
   background-color: #6a11cb;
 }
 
-/* Estilos para las cards de productos */
 .productos {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Número de columnas fijo */
   gap: 1.5rem;
   padding: 2rem;
-  /* Usamos el mixin para tener 3 columnas */
 }
 
-.card {
-  /* Extiende el estilo base de la card */
-}
 .card img {
   width: 100%;
   height: 250px;
@@ -351,7 +341,6 @@ footer {
   justify-content: space-between;
   flex-grow: 1;
   text-align: center;
-  /* Sigue usando el mixin flex-card-content */
   padding: 1.5rem;
 }
 .card .card-content h3 {
@@ -370,10 +359,6 @@ footer {
   color: #666;
   margin-bottom: 1rem;
 }
-.card .card-content button {
-  /* Extiende el estilo base del botón */
-}
-
 /* Estilos para la página del Carrito */
 .carrito .item {
   display: flex;
@@ -396,7 +381,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   nav ul {
     flex-direction: column;
   }
@@ -411,9 +396,9 @@ footer {
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .menu-toggle {
-    display: block;
+    display: block !important;
   }
   nav {
     display: none;

@@ -1,4 +1,3 @@
-/* Estilos base para las cards */
 %card-base {
     background-color: map-get($map: $colores, $key: blanco);
     border: 1px solid map-get($map: $colores, $key: blanco);
@@ -14,7 +13,7 @@
     }
 }
 
-/* Estilo base para los botones de las cards */
+
 %card-btn {
     background-color: map-get($map: $colores, $key: color-secundario);
     color: map-get($map: $colores, $key: blanco);
@@ -29,13 +28,12 @@
     }
 }
 
-/* Estilos para las cards de productos */
 .productos {
-    @include grid-cards(3, 250px, 1.5rem, 2rem); /* Usamos el mixin para tener 3 columnas */
+    @include grid-cards(3, 250px, 1.5rem, 2rem); 
 }
 
 .card {
-    @extend %card-base; /* Extiende el estilo base de la card */
+    @extend %card-base;
 
     img {
         width: 100%;
@@ -47,7 +45,7 @@
     }
 
     .card-content {
-        @include flex-card-content; /* Sigue usando el mixin flex-card-content */
+        @include flex-card-content;
         padding: 1.5rem;
 
         h3 {
@@ -70,7 +68,7 @@
         }
 
         button {
-            @extend %card-btn; /* Extiende el estilo base del botón */
+            @extend %card-btn; 
         }
     }
 }

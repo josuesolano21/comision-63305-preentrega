@@ -1,8 +1,9 @@
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     nav ul {
         flex-direction: column;
     }
+
 
     .productos {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -19,9 +20,9 @@
 }
 
 // Estilos para móviles
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .menu-toggle {
-        display: block;
+        display: block !important;
     }
 
     nav {

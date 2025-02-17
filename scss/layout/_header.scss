@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; 
 
     .header-content {
         display: flex;
@@ -20,13 +21,22 @@ header {
     .menu-toggle {
         background: none;
         border: none;
-        color: map-get($map: $colores, $key: blanco );
+        color: map-get($map: $colores, $key: blanco);
         font-size: 1.5rem;
         cursor: pointer;
-        display: none; 
+        display: none;
+        position: absolute;
+        right: 1rem; 
     }
 
     .menu-toggle-checkbox {
         display: none;
+    }
+}
+
+@media (max-width: 963px) {
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
     }
 }
