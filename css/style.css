@@ -160,12 +160,6 @@ header .menu-toggle-checkbox {
   display: none;
 }
 
-@media (max-width: 963px) {
-  .menu-toggle {
-    display: block;
-    font-size: 2rem;
-  }
-}
 nav ul {
   list-style: none;
   padding: 0;
@@ -245,7 +239,6 @@ body footer p {
   margin: 0;
 }
 
-/* Estilos para la página de Contacto */
 .contacto form {
   display: flex;
   flex-direction: column;

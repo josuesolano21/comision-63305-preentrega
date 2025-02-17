@@ -1,5 +1,5 @@
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, map-get($colores, "color-primario"), map-get($colores, "color-secundario"));
     color: map-get($map: $colores, $key:blanco);
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -13,6 +13,7 @@ header {
         align-items: center;
     }
 
+    
     h1 {
         margin: 0;
         font-size: 1.5rem;
@@ -34,9 +35,3 @@ header {
     }
 }
 
-@media (max-width: 963px) {
-    .menu-toggle {
-        display: block;
-        font-size: 2rem;
-    }
-}
