@@ -118,6 +118,35 @@ body {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+.payment-methods {
+  text-align: center;
+  padding: 20px;
+}
+.payment-methods h2 {
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+.payment-methods .payment-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.payment-methods .payment-list .payment-card {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+.payment-methods .payment-list .payment-card img {
+  width: 100%;
+  height: auto;
+}
+.payment-methods .payment-list .payment-card:hover {
+  transform: scale(1.1);
+}
+
 @font-face {
   font-family: "Skinic";
   src: url("../assets/fonts/Breathing.ttf") format("woff");
@@ -373,7 +402,6 @@ footer {
   cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 960px) {
   nav ul {
     flex-direction: column;
@@ -406,6 +434,33 @@ footer {
   }
   nav ul li {
     margin: 0.5rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .payment-list {
+    gap: 10px;
+  }
+  .payment-list .payment-card {
+    width: 80px;
+    height: 60px;
+  }
+}
+@media (max-width: 750px) {
+  .payment-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .payment-list {
+    gap: 8px;
+  }
+  .payment-list .payment-card {
+    width: 60px;
+    height: 50px;
+  }
+  .payment-list .payment-card img {
+    width: 90%;
   }
 }
 

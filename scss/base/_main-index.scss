@@ -63,6 +63,7 @@
             font-size: 0.9rem;
             margin-left: 0.5rem;
         }
+        
     }
 }
 
@@ -129,3 +130,39 @@
         @extend %boton-primario;
     }
 }
+
+.payment-methods {
+    text-align: center;
+    padding: 20px;
+    
+    h2 {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    .payment-list {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        
+        .payment-card {
+            width: 100px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
